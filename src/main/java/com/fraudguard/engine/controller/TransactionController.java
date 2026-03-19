@@ -17,8 +17,8 @@ public class TransactionController {
     private FraudDetectorService fraudDetectorService;
 
     @PostMapping("/check")
-    public String check(@RequestBody Transaction transaction) {
-        // Por ahora enviamos 'null' como segunda transacción para la prueba inicial
-        return fraudDetectorService.checkTransaction(transaction, null);
+        public String check(@RequestBody Transaction transaction) {
+         // Solo pasamos la transacción que llega del JSON
+         return fraudDetectorService.checkTransaction(transaction);
     }
 }
