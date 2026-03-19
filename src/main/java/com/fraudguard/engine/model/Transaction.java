@@ -9,8 +9,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Data // Esto genera getters, setters y toString automáticos gracias a Lombok
-@Entity // Esto le dice a Java que esta clase es una tabla en la base de datos
+@Data
+@Entity
 @Table(name = "transactions")
 public class Transaction {
 
@@ -20,12 +20,14 @@ public class Transaction {
 
     private String userId;
     private Double amount;
+    
+    // El timestamp es CLAVE para calcular la velocidad entre dos compras
     private LocalDateTime timestamp;
     
-    // Datos para la regla de geolocalización
+    // Coordenadas para la regla de geolocalización
     private Double latitude;
     private Double longitude;
 
-    private String merchantCategory; // Ejemplo: 'Restaurante', 'Casino', 'Grifo'
-    private String status; // 'PENDING', 'APPROVED', 'FRAUD', 'SUSPICIOUS'
+    private String merchantCategory; 
+    private String status; // Aquí guardaremos 'APPROVED', 'FRAUD', etc.
 }

@@ -9,6 +9,8 @@ import com.fraudguard.engine.model.Transaction;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
-    // Buscamos la última transacción de un usuario específico para comparar tiempos/lugares
+    
+    // Esta es la "joya de la corona". Spring Boot entiende el nombre del método y
+    // genera automáticamente el SQL para buscar la transacción más reciente de un usuario.
     Optional<Transaction> findFirstByUserIdOrderByTimestampDesc(String userId);
 }
