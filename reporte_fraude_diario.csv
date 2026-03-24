@@ -1,0 +1,11 @@
+ID,User,Amount,Country,Status,Reason,Timestamp
+1,Andrea,6420.00,Peru,APPROVED,Normal transaction,2026-03-20T00:58:31.252074
+2,Andrea,13992.00,Peru,SUSPICIOUS,High amount threshold,2026-03-20T00:58:31.274549
+3,Andrea,5263.00,Peru,FRAUD,Impossible travel speed,2026-03-20T00:58:31.286057
+4,Andrea,10796.00,Peru,SUSPICIOUS,High amount threshold,2026-03-20T00:58:31.299399
+5,Andrea,2285.00,Japan,FRAUD,Impossible travel speed,2026-03-20T00:58:31.312908
+6,Andrea,4358.00,Peru,FRAUD,Impossible travel speed,2026-03-20T00:58:31.328045
+7,Andrea,9175.00,Peru,FRAUD,Impossible travel speed,2026-03-20T00:58:31.337319
+8,Andrea,8448.00,Peru,FRAUD,Impossible travel speed,2026-03-20T00:58:31.352846
+9,Andrea,11500.00,Peru,SUSPICIOUS,High amount threshold,2026-03-20T00:58:31.373905
+10,Andrea,14472.00,Peru,SUSPICIOUS,High amount threshold,2026-03-20T00:58:31.391059
